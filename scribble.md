@@ -9,3 +9,7 @@ We built the globalState. It was a ton to take in and nothing is calling it yet 
 # 22.1.6
 
 Here we refactored categoryMenu, productList and Detail to use the GloabalState. Then we took use state out of Home.js
+
+# 22.2.3
+
+Made all the tests for the cart and then added the reducers to make them pass.
