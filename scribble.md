@@ -21,3 +21,7 @@ Created the Cart/index.js and the Cart/style.css and copy pasted in the basics t
 # 22.2.5
 
 We added the shopping cart emoji to the screen and mde it use the TOGGLE_CART reducer we just made. In the global state we added the cart:[] and cartOpen: false. Then we went to Cart/index.js and imported userStoreContext from the GlobalState and the TOGGLE_CART reducer from our actions file. Finally we added the custom useStoreContext hook in our function and made an if statemment if things are false and also made a function that calls the imported TOGGLE_CART reducer. In the JSX we added an onClick to the close button to use this function.
+
+# 22.2.6
+
+Got the cart to display variable data and display a different message when the cart is empty. We spent our time updating the ProductItem/index.js, Detail.js and Cart/index.js. In ProductItem we imported and built a function for AD_TO_CART. In also set up ADD_TO_CART and imported a few others to be used later. Lastly in Cart we set it up to check the cart total and send a silly little message if the cart is empty. We also removed the hardcoded info and replaced it with real variables. The main issue now is if we add to cart and it exsists it adds another instead of adding more onto what exsists.
