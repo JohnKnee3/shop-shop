@@ -5,3 +5,7 @@ Created a utils/actions.js file and a utils/reducers.js file. This is in place t
 # 22.1.5
 
 We built the globalState. It was a ton to take in and nothing is calling it yet but we are currently able to console.log the actual state. I assume next up is getting it running.
+
+# 22.1.6
+
+Here we refactored categoryMenu, productList and Detail to use the GloabalState. Then we took use state out of Home.js
