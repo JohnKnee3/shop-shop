@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
-import { useQuery } from "@apollo/client";
+import React, { useEffect, useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
+import { useQuery } from '@apollo/client';
 
-import { useStoreContext } from "../utils/GlobalState";
+import Cart from '../components/Cart';
+import { useStoreContext } from '../utils/GlobalState';
 import {
   REMOVE_FROM_CART,
   UPDATE_CART_QUANTITY,
   ADD_TO_CART,
   UPDATE_PRODUCTS,
-} from "../utils/actions";
-import { QUERY_PRODUCTS } from "../utils/queries";
-import Cart from "../components/Cart";
-import spinner from "../assets/spinner.gif";
+} from '../utils/actions';
+import { QUERY_PRODUCTS } from '../utils/queries';
+import spinner from '../assets/spinner.gif';
 
 function Detail() {
   const [state, dispatch] = useStoreContext();
@@ -36,7 +36,6 @@ function Detail() {
 
   const addToCart = () => {
     const itemInCart = cart.find((cartItem) => cartItem._id === id);
-
     if (itemInCart) {
       dispatch({
         type: UPDATE_CART_QUANTITY,
@@ -60,7 +59,7 @@ function Detail() {
 
   return (
     <>
-      {currentProduct ? (
+      {currentProduct && cart ? (
         <div className="container my-1">
           <Link to="/">← Back to Products</Link>
 
@@ -69,8 +68,8 @@ function Detail() {
           <p>{currentProduct.description}</p>
 
           <p>
-            <strong>Price:</strong>${currentProduct.price}{" "}
-            <button onClick={addToCart}>Add to cart</button>
+            <strong>Price:</strong>${currentProduct.price}{' '}
+            <button onClick={addToCart}>Add to Cart</button>
             <button
               disabled={!cart.find((p) => p._id === currentProduct._id)}
               onClick={removeFromCart}
