@@ -33,3 +33,7 @@ Here we got the cart to remove and edit the quantity.
 # 22.3.3
 
 Big time copy paste to set up the indexDB.
+
+# 22.3.4
+
+Added all of the functionality to get the products and categories to show up in indexDB.
