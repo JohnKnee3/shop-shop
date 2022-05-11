@@ -37,3 +37,7 @@ Big time copy paste to set up the indexDB.
 # 22.3.4
 
 Added all of the functionality to get the products and categories to show up in indexDB.
+
+# 22.3.5
+
+Set up the idb functionality for the cart.
