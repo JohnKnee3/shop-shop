@@ -25,3 +25,7 @@ We added the shopping cart emoji to the screen and mde it use the TOGGLE_CART re
 # 22.2.6
 
 Got the cart to display variable data and display a different message when the cart is empty. We spent our time updating the ProductItem/index.js, Detail.js and Cart/index.js. In ProductItem we imported and built a function for AD_TO_CART. In also set up ADD_TO_CART and imported a few others to be used later. Lastly in Cart we set it up to check the cart total and send a silly little message if the cart is empty. We also removed the hardcoded info and replaced it with real variables. The main issue now is if we add to cart and it exsists it adds another instead of adding more onto what exsists.
+
+# 22.2.7
+
+Here we got the cart to remove and edit the quantity.

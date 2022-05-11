@@ -7,7 +7,6 @@ import "./style.css";
 
 const Cart = () => {
   const [state, dispatch] = useStoreContext();
-  console.log("I am the state", state);
 
   function toggleCart() {
     dispatch({ type: TOGGLE_CART });
