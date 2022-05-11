@@ -41,3 +41,7 @@ Added all of the functionality to get the products and categories to show up in 
 # 22.3.5
 
 Set up the idb functionality for the cart.
+
+# 22.4.4
+
+Was given examples of how to use the stripe checkout page with the terminal to generte a product, price and a seesion and then to slap that seesion id into an HTML document to see our custom stripe page.
