@@ -29,3 +29,7 @@ Got the cart to display variable data and display a different message when the c
 # 22.2.7
 
 Here we got the cart to remove and edit the quantity.
+
+# 22.3.3
+
+Big time copy paste to set up the indexDB.
