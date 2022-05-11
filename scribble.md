@@ -42,6 +42,10 @@ Added all of the functionality to get the products and categories to show up in 
 
 Set up the idb functionality for the cart.
 
-# 22.4.4
+# 22.4.3
 
 Was given examples of how to use the stripe checkout page with the terminal to generte a product, price and a seesion and then to slap that seesion id into an HTML document to see our custom stripe page.
+
+# 22.4.4
+
+I ran into several issues here. For the most part we simply set up stripe on the back end. The fist error was some version control thing that was fixed by downloading the 22.3 zip and revoing everything I had and replacing it with that. The next fix was when the moved the url to a varibale. It didn't seem to be referencing a property that exists anymore. I evetually found I had to change it from context.header.referer and to context.header.host and then add the http manually. Hopefully all of this will work out on the front end.
